@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //print the sum of all elements in an array
+
+        //IIFE
+
+            (function(arr){
+                var total=0;
+                for(let i=0; i<arr.length; i++){
+                    total = total+arr[i]
+                }
+             console.log(total)
+            })
+            ([1,2,3,4,5,6,7,8,9]);
+
+            
+
+        //anonymous
+
+            var array =[1,2,3,4,5,6,7,8,9]
+            var odd = function(array){
+                var result1 = array.reduce((acc,cv)=>acc+cv)
+                console.log(result1)
+            }
+            odd(array);
+
+
+
+        //arrow
+
+            var sumOf=(arr)=>{
+                var total=0;
+                    for(var key in arr){
+                        total = total+arr[key]
+                    }
+                console.log(total)
+            }
+            sumOf([1,2,3,4,5,6,7,8,9]);
+
+
+    </script>
+</body>
+</html>
